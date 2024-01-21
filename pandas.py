@@ -23,5 +23,16 @@ Select Multiple Columns in a Pandas Dataframe using loc[] function
 
 df.loc[1:3, ["Name", "Qualification"]] 
 Another example 
-df.loc[0, :] # is more flexible than basic df.columns method. 
+df.loc[0, :] # is more flexible than basic df.columns method.
+# Output: First column, all rows. 
+
+# select all rows  
+
+# select first two columns 
+
+df.iloc[:, 0:2] 
+
+# iloc[row slicing, column slicing] 
+
+df.iloc[0:2, 1:3] 
 '''
